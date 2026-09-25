@@ -8,5 +8,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print message
-        run: echo "Hello Santosh, GitHub Actions is running!"
+      - uses: actions/checkout@v4
+
+      - name: List files
+        run: ls -la
+
+      - name: Read file
+        run: cat Santosh.txt
